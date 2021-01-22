@@ -11,24 +11,26 @@
    
         <input type="text" ng-model="value_1" placeholder="enter  values" >
         <input type="text" ng-model="value_2" placeholder="enter  values" >
+        
         <h1>
-            <input type="text" value= "{{ value_1 + value_2 ||'' }}" >
-           
+            {{ value_1 + value_2 ||'no  value' }}
+  
+           <input type="text"  value="{{value_1 + value_2 ||''}}">
         </h1>
         <h1>
-            {{value_1 - value_2 || " "}}
+            {{value_1 - value_2 || " no  value"}}
         </h1>
         <h1>
-            {{value_1 * value_2 || " "}}
+            {{value_1 * value_2 || "no  value "}}
         </h1>
         <h1>
             {{
-                value_1 / value_2 || " "
+                value_1 / value_2 || "no  value "
                 
             }}
         </h1>
         <h1>
-            {{ value_1 % value_2 || " " }}
+            {{ value_1 % value_2 || "no  value " }}
         </h1>
 
     </div>
