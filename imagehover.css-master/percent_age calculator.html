@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta value_1 + value_2="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div ng-app=""  >
+   
+        <input type="text" ng-model="value_1" placeholder="enter  values" >
+        <input type="text" ng-model="value_2" placeholder="enter  values" >
+        <h1>
+            <input type="text" value= "{{ value_1 + value_2 ||'' }}" >
+           
+        </h1>
+        <h1>
+            {{value_1 - value_2 || " "}}
+        </h1>
+        <h1>
+            {{value_1 * value_2 || " "}}
+        </h1>
+        <h1>
+            {{
+                value_1 / value_2 || " "
+                
+            }}
+        </h1>
+        <h1>
+            {{ value_1 % value_2 || " " }}
+        </h1>
+
+    </div>
+</body>
+</html>
