@@ -20,9 +20,9 @@
         
     <div class="container" ng-app="myapp" ng-controller="myctr">
         <div class="row">
-            <div class="col-md-12 bg-light  d-flex justify-content-center">
+            <div class="col-md-12 bg-light  mt-5 d-flex justify-content-center border rounded">
                 
-                <div>
+                <div class="mt-5 mb-5 ">
 
 
 
@@ -77,7 +77,6 @@
         $scope.value_3 = 0;
         $scope.value_4 = 0;
         $scope.result1 = 0;
-        $scope.result2 = 0;
         // function 
         $scope.percent1 = function () {
             
@@ -87,7 +86,8 @@
 
         }
         $scope.percent2 = function () {
-          
+            $scope.result2 = 0;
+
             // value_3/value_4 *100 
             $scope.result2 = parseFloat($scope.value_3) * parseFloat($scope.value_4)*100;
 
