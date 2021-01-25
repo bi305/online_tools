@@ -1,96 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta value_1 + value_2="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <title>Document</title>
-    <style>
-      
-    </style>
-</head>
+    <style></style>
+  </head>
 
-<body>
-    
-   
-       
-        
+  <body class="bg-light">
     <div class="container" ng-app="myapp" ng-controller="myctr">
-        <div class="row">
-            <div class="col-md-12 bg-light  mt-5 d-flex justify-content-center border rounded">
-                
-                <div class="mt-5 mb-5 ">
-
-
-
- 
-                    
-
-                    <input type="text" ng-model="value_1" ng-change="percent1()"  placeholder="enter  values">
-                    <input type="text" ng-model="value_2" ng-change="percent1()"  placeholder="enter  values">
-                    
-                    <h1>
-
-                        <input type="text" value="    {{result1 || ' no value'}}" readonly>
-                    </h1>
-                    
-                    
-                    <input type="text" ng-model="value_3" ng-change="percent2()"  placeholder="enter  values">
-                    <input type="text" ng-model="value_4" ng-change="percent2()" placeholder="enter  values">
-                   <h1>
-
-                       <input type="text" value="    {{result2 || ' no value'}}" readonly>
-                   </h1>
+      <div class="row">
+          <div class="col md-12">
+            <form class="d-flex justify-content-center">
+                <div class="form-row align-items-center">
+                  <div class="col-auto">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">what is</div>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        ng-model="value_1"
+                        ng-change="percent1()"
+                      />
+                      <div class="input-group-append">
+                        <div class="input-group-text">%</div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col-auto">
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">of</div>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        ng-model="value_2"
+                        ng-change="percent1()"
+                      />
+                      <div class="input-group-append">
+                        <div class="input-group-text">?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <input
+                     type="text" 
+                     class="form-control mb-2"
+                     value="    {{result1 || ' no value'}}"
+                      readonly 
+                    />
+                  </div>
                 </div>
-
-            </div>
-
-
-
-
-        </div>
+              </form>
+              <form class="d-flex justify-content-center">
+                  <div class="form-row align-items-center">
+                    <div class="col-auto">
+                      <div class="input-group mb-2">
+                        
+                        <input
+                          type="text"
+                          class="form-control"
+                          ng-model="value_3"
+                          ng-change="percent2()"
+                        />
+                        <div class="input-group-append">
+                          <div class="input-group-text">is  what  percent  of</div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    <div class="col-auto">
+                      <div class="input-group mb-2">
+                         
+                        <input
+                          type="text"
+                          class="form-control"
+                          ng-model="value_4"
+                          ng-change="percent2()"
+                        />
+                        <div class="input-group-append">
+                          <div class="input-group-text">?</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <input
+                       type="text" 
+                       class="form-control mb-2"
+                       value="    {{result2 || ' no value'}}"
+                        readonly 
+                      />
+                    </div>
+                  </div>
+                </form>
+          </div>
+        
+      
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
 <script>
-    var app = angular.module('myapp', []);
-    app.controller('myctr', function ($scope) {
+  var app = angular.module("myapp", []);
+  app.controller("myctr", function ($scope) {
+    $scope.value_1 = 0;
+    $scope.value_2 = 0;
+    $scope.value_3 = 0;
+    $scope.value_4 = 0;
 
+    // function
+    $scope.percent1 = function () {
+      $scope.result1 = 0;
+      $scope.result1 =
+        (parseFloat($scope.value_1) * parseFloat($scope.value_2)) / 100;
+    };
+    $scope.percent2 = function () {
+      $scope.result2 = 0;
 
-
-        $scope.value_1 = 0;
-        $scope.value_2 = 0;
-        $scope.value_3 = 0;
-        $scope.value_4 = 0;
-        $scope.result1 = 0;
-        // function 
-        $scope.percent1 = function () {
-            
-            
-            
-            $scope.result1 = parseFloat($scope.value_1) * parseFloat($scope.value_2)/100;
-
-        }
-        $scope.percent2 = function () {
-            $scope.result2 = 0;
-
-            // value_3/value_4 *100 
-            $scope.result2 = parseFloat($scope.value_3) * parseFloat($scope.value_4)*100;
-
-        }
-    });
+      // value_3/value_4 *100
+      $scope.result2 =
+        (parseFloat($scope.value_3) / parseFloat($scope.value_4)) * 100;
+    };
+  });
 </script>
