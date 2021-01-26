@@ -23,142 +23,152 @@
   <body class="bg-light">
     <div class="container" ng-app="myapp" ng-controller="myctr">
       <div class="row">
-        <div
-          class="col-md-8 col-sm-12 col-8 bg-white mt-5 border shadow rounded"
-        >
-          <form class="d-flex justify-content-center mb-5 mt-5">
-            <div class="form-row align-items-center">
-              <div class="col-md-4">
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">what is</div>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    ng-model="value_1"
-                    ng-change="percent1()"
-                  />
-                  <div class="input-group-append">
-                    <div class="input-group-text">%</div>
-                  </div>
-                </div>
-              </div>
+        <div class="col-md-8 col-sm-12">
+           <div class="row">
 
-              <div class="col-md-4">
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">of</div>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    ng-model="value_2"
-                    ng-change="percent1()"
-                  />
-                  <div class="input-group-append">
-                    <div class="input-group-text">?</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  value="    {{result1 || ' no value'}}"
-                  readonly
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-        <div
-          class="col-md-8 col-sm-12 col-8 bg-white mt-3 border shadow rounded">
-          <form class="d-flex justify-content-center mb-5 mt-5">
-            <div class="form-row align-items-center">
-              <div class="col-md-4">
-                <div class="input-group mb-2">
-                  <input
-                    type="text"
-                    class="form-control"
-                    ng-model="value_3"
-                    ng-change="percent2()"
-                  />
-                  <div class="input-group-append">
-                    <div class="input-group-text">is what percent of</div>
-                  </div>
-                </div>
-              </div>
+             <div
 
-              <div class="col-md-4">
-                <div class="input-group mb-2">
-                  <input
-                    type="text"
-                    class="form-control"
-                    ng-model="value_4"
-                    ng-change="percent2()"
-                  />
-                  <div class="input-group-append">
-                    <div class="input-group-text">?</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  value="    {{result2 || ' no value'}}"
-                  readonly
-                />
-              </div>
-            </div>
-          </form>
+             class="col-md-12 col-sm-12 col-8 bg-white mt-5 border shadow rounded">
+               <form class="d-flex justify-content-center mb-5 mt-5">
+                 <div class="form-row align-items-center">
+                   <div class="col-md-4">
+                     <div class="input-group mb-2">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text">what is</div>
+                       </div>
+                       <input
+                         type="text"
+                         class="form-control"
+                         ng-model="value_1"
+                         ng-change="percent1()"
+                       />
+                       <div class="input-group-append">
+                         <div class="input-group-text">%</div>
+                       </div>
+                     </div>
+                   </div>
+     
+                   <div class="col-md-4">
+                     <div class="input-group mb-2">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text">of</div>
+                       </div>
+                       <input
+                         type="text"
+                         class="form-control"
+                         ng-model="value_2"
+                         ng-change="percent1()"
+                       />
+                       <div class="input-group-append">
+                         <div class="input-group-text">?</div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-md-3">
+                     <input
+                       type="text"
+                       class="form-control mb-2"
+                       value="    {{result1 || ' no value'}}"
+                       readonly
+                     />
+                   </div>
+                 </div>
+               </form>
+             </div>
+             
+             <div
+               class="col-md-12 col-sm-12 col-8 bg-white mt-3 border shadow rounded">
+               <form class="d-flex justify-content-center mb-5 mt-5">
+                 <div class="form-row align-items-center">
+                   <div class="col-md-4">
+                     <div class="input-group mb-2">
+                       <input
+                         type="text"
+                         class="form-control"
+                         ng-model="value_3"
+                         ng-change="percent2()"
+                       />
+                       <div class="input-group-append">
+                         <div class="input-group-text">is what percent of</div>
+                       </div>
+                     </div>
+                   </div>
+     
+                   <div class="col-md-4">
+                     <div class="input-group mb-2">
+                       <input
+                         type="text"
+                         class="form-control"
+                         ng-model="value_4"
+                         ng-change="percent2()"
+                       />
+                       <div class="input-group-append">
+                         <div class="input-group-text">?</div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="col-md-3">
+                     <input
+                       type="text"
+                       class="form-control mb-2"
+                       value="    {{result2 || ' no value'}}"
+                       readonly
+                     />
+                   </div>
+                 </div>
+               </form>
+             </div>
+             <div
+               class="col-md-12 col-sm-12 col-8 bg-white mb-3 mt-3 border shadow rounded">
+               <p class="col-md-12 d-flex justify-content-center mt-3">
+                 What is the percentage increase/decrease
+               </p>
+               <div class="d-flex justify-content-center mb-5 mt-5">
+                 <div class="form-row align-items-center">
+                   <div class="col-md-4">
+                     <div class="input-group mb-2">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text">from</div>
+                       </div>
+                       <input
+                         type="text"
+                         class="form-control"
+                         ng-model="value_5"
+                         ng-change="percent3()"
+                       />
+                     </div>
+                   </div>
+     
+                   <div class="col-md-4">
+                     <div class="input-group mb-2">
+                       <div class="input-group-prepend">
+                         <div class="input-group-text">to</div>
+                       </div>
+                       <input
+                         type="text"
+                         class="form-control"
+                         ng-model="value_6"
+                         ng-change="percent3()"
+                       />
+                     </div>
+                   </div>
+                   <div class="col-">
+                     <input
+                       type="text"
+                       class="form-control mb-2"
+                       value=" {{  result3 || ' no value'}}"
+                       readonly
+                     />
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
         </div>
-        <div
-          class="col-md-8 col-sm-12 col-8 bg-white mb-3 mt-3 border shadow rounded">
-          <p class="col-md-12 d-flex justify-content-center mt-3">
-            What is the percentage increase/decrease
-          </p>
-          <div class="d-flex justify-content-center mb-5 mt-5">
-            <div class="form-row align-items-center">
-              <div class="col-md-4">
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">from</div>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    ng-model="value_5"
-                    ng-change="percent3()"
-                  />
-                </div>
-              </div>
+        <div class="col-md-4 col-sm-1 col-1">
 
-              <div class="col-md-4">
-                <div class="input-group mb-2">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text">to</div>
-                  </div>
-                  <input
-                    type="text"
-                    class="form-control"
-                    ng-model="value_6"
-                    ng-change="percent3()"
-                  />
-                </div>
-              </div>
-              <div class="col-">
-                <input
-                  type="text"
-                  class="form-control mb-2"
-                  value=" {{  result3 || ' no value'}}"
-                  readonly
-                />
-              </div>
-            </div>
-          </div>
         </div>
+
       </div>
     </div>
 
